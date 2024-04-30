@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function StopWatch() {
     const [isRunning, setIsRunning] = useState(false);
@@ -21,7 +21,7 @@ function StopWatch() {
     function start() {
         setIsRunning(true);
         startTimeRef.current = Date.now() - elapsedTime;
-        console.log(startTimeRef.current);
+        // console.log(startTimeRef.current);
     }
     function stop() {
         setIsRunning(false);
